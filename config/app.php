@@ -166,7 +166,11 @@ return [
 
 
 		Modules\Core\Providers\AsgardServiceProvider::class,
-	],
+
+
+    OpenSkill\Datatable\DatatableServiceProvider::class,
+
+  ],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -189,6 +193,9 @@ return [
         'Config'    => Illuminate\Support\Facades\Config::class,
         'Cookie'    => Illuminate\Support\Facades\Cookie::class,
         'Crypt'     => Illuminate\Support\Facades\Crypt::class,
+
+        'Datatable'=> OpenSkill\Datatable\Facades\DatatableFacade::class,
+
         'DB'        => Illuminate\Support\Facades\DB::class,
         'Eloquent'  => Illuminate\Database\Eloquent\Model::class,
         'Event'     => Illuminate\Support\Facades\Event::class,
